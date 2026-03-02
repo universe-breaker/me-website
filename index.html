@@ -1,0 +1,78 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="/stylesheet.css" />
+		<title>Nico's Basement</title>
+		<style>
+			.topnav {
+				color: #e0d0d0;
+			    font-weight: normal;
+			    font-family: Arial;
+			    height: 48px;
+			    background-color: #555;
+			    background-image: url("top-bg.gif");
+			    border-bottom: 3px solid #000;
+			    padding: 0; /* Reset padding */
+			    display: flex;
+			    align-items: center; /* Vertically center content */
+			}
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			  offset-position: auto;
+			}
+
+			.introduction {
+				text-align:center;
+				font-size: 25px;
+				font-family: Comic Sans MS
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topnav">
+			<!-- todo: füg eine naviagtion ein. Home, Contact, Und villeicht noch weiteres. - 23:22Uhr 1.03.2026 -->
+		</div>
+		<br />
+
+		<!-- website beginnt hier! -->
+		<p class="introduction">Welcome to me basement!</p>
+
+		<p style="text-align:center; font-family:8-BIT WONDER;">
+			who are you? I. AM. NICOALI! welcome to my website here! glad you
+			made it
+			<br />
+		</p>
+		<p class="introduction" style="font-size:20px;">
+			as you see tho.The Website is still work in progress. So excuse me
+			if there are
+			<br />
+			any problems on here, i will try to fix em. Meanwhile just grab a
+			coffee and enjoy this mastershit of art :33
+		</p>
+
+		<div id="playSoundBtn"><img src="toolgun.png" /></div>
+
+		<script>
+			const sounds = [
+			    'https://files.catbox.moe/uxlz92.wav',
+			    'https://files.catbox.moe/hwco8i.wav',
+			];
+
+			// Funktion, um einen zufälligen Sound abzuspielen
+			function playRandomSound() {
+			    // Zufälligen Index aus dem Array wählen
+			    const randomIndex = Math.floor(Math.random() * sounds.length);
+			    const audio = new Audio(sounds[randomIndex]);
+			    audio.play();
+			}
+
+			// Event Listener für den Button
+			document.getElementById('playSoundBtn').addEventListener('click', playRandomSound);
+		</script>
+	</body>
+</html>
+<!-- zak hitsuji -->
